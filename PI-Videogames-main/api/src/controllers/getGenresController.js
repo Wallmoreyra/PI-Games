@@ -13,6 +13,9 @@ const genresController = async () => {
             generosAgregado = generos;
             return generos;
             //return "peticion a generos!!!"
+        } else{
+            //console.log("ya los mando!!")
+            return generosAgregado;
         }
     } catch (error) {
         throw new Error('Error al pedir los generos!!!');
